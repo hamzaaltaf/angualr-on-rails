@@ -22,7 +22,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+gem 'pg'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -33,10 +33,11 @@ gem 'bower-rails'
 # gem 'capistrano-rails', group: :development
 gem "foreman"
 group :production, :staging do
+  
   gem "rails_12factor"
   gem "rails_stdout_logging"
   gem "rails_serve_static_assets"
-  gem 'pg'
+  
 end
 
 
@@ -47,7 +48,7 @@ group :test, :development do
   gem "database_cleaner"
   gem "selenium-webdriver"
   gem 'byebug'
-  gem 'sqlite3'
+  
 end
 
 group :development do
