@@ -29,6 +29,7 @@ gem 'pg'
 # Use Unicorn as the app server
 # gem 'unicorn'
 gem 'bower-rails'
+gem 'angular-rails-templates'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem "foreman"
